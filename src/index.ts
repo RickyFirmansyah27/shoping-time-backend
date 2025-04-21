@@ -16,7 +16,7 @@ const port = 8000
 // Middleware
 app.use(boom());
 app.use(cors({
-    origin: '*',
+    origin: 'https://shoping-time-frontend.vercel.app',
 }));
 app.use(HttpLogger);
 app.use(express.json({ limit: '10mb' }));
