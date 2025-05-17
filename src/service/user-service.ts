@@ -18,7 +18,6 @@ export const createUser = async (
   email: string,
   hashedPassword: string
 ) => {
-  // create user
   const query = `
         INSERT INTO "User" (name, password, email) 
         VALUES ($1, $2, $3) 
@@ -37,7 +36,6 @@ export const createMerchantUser = async (
   hashedPassword: string,
   is_merchant: boolean
 ) => {
-  // create user
   const query = `
         INSERT INTO "User" (name, password, email, is_merchant) 
         VALUES ($1, $2, $3, $4) 
